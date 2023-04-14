@@ -6,6 +6,10 @@ import time
 app = Flask(__name__)
 app.debug = True
 
+@app.route('/')
+def index():
+    return render_template('app.html')
+
 @app.route('/wifi')
 def wifi():
     wifi_ap_array = scan_wifi_networks()
