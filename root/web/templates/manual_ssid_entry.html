@@ -7,15 +7,15 @@
 
     <p align="center"><label for="menu">Enter WiFi SSID</label></p>
     <p align="center"><form action="{{ url_for('save_credentials') }}" method=post>
-    <p><input type="text" name="ssid", class="wifiNetworkInputs"></p>
+    <p align="center"><input type="text" name="ssid", class="wifiNetworkInputs"></p>
 
     <p align="center"><label>&nbsp;</label></p>
 
     <p align="center"><label for="wifi_key">Enter Wifi Password</label></p>
-    <p><input type="password" name="wifi_key", class="wifiNetworkInputs"></p>
+    <p align="center"><input type="password" name="wifi_key", class="wifiNetworkInputs"></p>
     <p align="center"><label>&nbsp;</label></p>
 
-    <p><input type="submit", class="button" style="height:30px;width:150px"></p>
+    <p align="center"><input type="submit", class="button" style="height:30px;width:150px"></p>
     </form></p>
   </div>
 {% endblock %}
