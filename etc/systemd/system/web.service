@@ -1,0 +1,11 @@
+[Unit]
+Description=Dac web
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=python3 /root/web/app.py
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target
