@@ -24,7 +24,6 @@ def save_credentials():
     ssid = request.form['ssid']
     wifi_key = request.form['wifi_key']
     create_wpa_supplicant(ssid, wifi_key)
-    os.system('bash /tmp/wifi.tmp')
     return redirect('/')
 
 @app.route('/power')
