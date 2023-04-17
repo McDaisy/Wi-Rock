@@ -2,14 +2,6 @@
 
 {% block body %}
  <div id="indexContent">
-  <p align="center"><label>&nbsp;</label></p>
-  <p align="center"><label>&nbsp;</label></p>
-
-  <p align="center"><a class="manualSSIDEntry" href="{{ url_for('wifi') }}">WiFi Setup</a></p>
-
-  <p align="center"><label>&nbsp;</label></p>
-  <p align="center"><label>&nbsp;</label></p>
-
-  <p align="center"><a href="{{ url_for('power') }}">Power Settings</a></p>
- </div>
+  <p align="center"><a href="{{ url_for('wifi') }}"><button class="button wifisetupbutton" style="height:40px;width:150px">WiFI setu>
+  <p align="center"><a href="{{ url_for('power') }}"><button class="button powersettingsbutton" style="height:40px;width:150px">Powe> </div>
 {% endblock %}
