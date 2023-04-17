@@ -1,11 +1,9 @@
 {% extends 'layout.html' %}
-
 {% block body %}
-  <div id="indexContent">
-     <p align="center"><label>&nbsp;</label></p>
-     <p align="center"><label>&nbsp;</label></p>
+ <div id="indexContent">
+  <p align="center"><a href="{{ url_for('reboot') }}"><button class="button rebootbutton" style="height:40px;width:150px">Reboot</bu>  <p align="center"><a href="{{ url_for('poweroff') }}"><button class="button shutdownbutton" style="height:40px;width:150px">Shutdo>
+  <p align="center"><label>&nbsp;</label></p>
 
-     <p align="center"><a href="{{ url_for('reboot') }}"><button class="button" style="height:40px;width:150px">Reboot</button></a></p>
-     <p align="center"><a href="{{ url_for('poweroff') }}"><button class="button" style="height:40px;width:150px">Power OFF</button></a></p>
-  </div>
+  <p align="center"><a href="/"><button class="button backbutton" style="height:40px;width:150px">Back</button></a></p>
+ </div>
 {% endblock %}
