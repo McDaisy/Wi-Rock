@@ -2,18 +2,17 @@
 
 {% block body %}
   <div id="mainContent">
-    <p align="center"><label>&nbsp;</label></p>
+    <form action="{{ url_for('save_credentials') }}" method=post>
+    <p align="center"><label for="menu">WiFi SSID</label><br />
+    <input type="text" name="ssid" class="wifiNetworkInputs inputs"></p>
+
+    <p align="center"><label for="wifi_key">WiFi password</label><br />
+    <input type="password" name="wifi_key" class="wifiNetworkInputs inputs"></p>
+    <p align="center"><input type="submit" class="button confirmbutton" value="Confirm" style="height:40px;width:150px"></p>
+    </p></form>
+
     <p align="center"><label>&nbsp;</label></p>
 
-    <p align="center"><label for="menu">Enter WiFi SSID</label></p>
-    <p align="center"><form action="{{ url_for('save_credentials') }}" method=post>
-    <p align="center"><input type="text" name="ssid", class="wifiNetworkInputs"></p>
-
-    <p align="center"><label>&nbsp;</label></p>
-
-    <p align="center"><label for="wifi_key">Enter Wifi Password</label></p>
-    <p align="center"><input type="password" name="wifi_key", class="wifiNetworkInputs"></p>
-    <p align="center"><input type="submit", class="button", value="Confirm" style="height:30px;width:150px"></p>
-    </form></p>
+    <p align="center"><a href="/wifi"><button class="button backbutton" style="height:40px;width:150px">Back</button></a></p>
   </div>
 {% endblock %}
