@@ -63,12 +63,12 @@ body {
   background: rgba(250,250, 250, 0.65);
 }
 
-.powersettingsbutton {
+.powermanagementbutton {
   background-color: #fafafa;
   color: #111;
 }
 
-.powersettingsbutton:hover {
+.powermanagementbutton:hover {
   background: rgba(250,250, 250, 0.65);
 }
 
