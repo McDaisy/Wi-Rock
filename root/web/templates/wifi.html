@@ -4,20 +4,20 @@
   <div id="mainContent">
     <p align="center"><form action="{{ url_for('save_credentials') }}" method=post>
     <p align="center"><label for="menu">WiFi network</label><br />
-    <select id="ssid" name="ssid" class="wifiNetworkInputs inputs" style="width:150px">
+    <select id="ssid" name="ssid" class="wifiNetworkInputs inputs" style="width:180px">
             {% for ssid in wifi_ap_array %}
               <option class="wifiNetworkInputs inputs" style="width:150px" value='{{ ssid }}'>{{ ssid }}</option>
             {% endfor %}
          </select></p>
     <p align="center"><label for="wifi_key">WiFi password</label><br />
     <input type="password" name="wifi_key" class="wifiNetworkInputs inputs" style="width:150px"></p>
-    <p align="center"><input type="submit" class="button confirmbutton" value="Confirm" style="height:40px;width:150px"></p>
+    <p align="center"><input type="submit" class="button confirmbutton" value="Confirm" style="height:40px;width:180px"></p>
     </form></p>
 
-    <p align="center"><a href="{{ url_for('manual_ssid_entry') }}"><button class="button manualssidbutton" style="height:40px;width:150px">Manual SSID</button></a></p>
+    <p align="center"><a href="{{ url_for('manual_ssid_entry') }}"><button class="button manualssidbutton" style="height:40px;width:180px">Manual SSID</button></a></p>
 
     <p align="center"><label>&nbsp;</label></p>
 
-    <p align="center"><a href="/"><button class="button backbutton" style="height:40px;width:150px">Back</button></a></p>
+    <p align="center"><a href="/"><button class="button backbutton" style="height:40px;width:180px">Back</button></a></p>
   </div>
 {% endblock %}
