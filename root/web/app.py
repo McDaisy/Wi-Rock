@@ -51,6 +51,9 @@ def scan_wifi_networks():
             ap_ssid = line[27:-1]
             if ap_ssid != '':
                 ap_array.append(ap_ssid)
+    
+    ap_array = list(set(ap_array))
+    ap_array.sort()
     return ap_array
 
 def create_wpa_supplicant(ssid, wifi_key):
