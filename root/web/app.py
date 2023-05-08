@@ -54,7 +54,7 @@ def scan_wifi_networks():
     return ap_array
 
 def create_wpa_supplicant(ssid, wifi_key):
-        os.system('nmcli con add ifname wlan0 type wifi ssid ' + ssid + ' wifi-sec.key-mgmt wpa-psk wifi-sec.psk ' + wifi_key + ' ')
+        os.system('nmcli con add ifname wlan0 type wifi ssid ' + ssid + ' wifi-sec.key-mgmt wpa-psk wifi-sec.psk ' + wifi_key + ' --rescan no')
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 80)
